@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ravi Kumar - B.Tech CSE (Cyber Security) Portfolio. Full Stack Developer, Cybersecurity Enthusiast, and Hackathon Competitor.">
+    <meta name="keywords" content="Ravi Kumar, Cyber Security, Portfolio, Full Stack Developer, B.Tech CSE, Python, C, SQL, HTML, CSS, JavaScript, Hackathons">
+    <meta name="author" content="Ravi Kumar">
+    <title>Ravi Kumar | Cyber Security Specialist & Full Stack Developer</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Dynamic Particle Canvas for Cyber Matrix Effect -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-grid-pattern"></div>
+    <div class="radial-glow glow-1"></div>
+    <div class="radial-glow glow-2"></div>
+
+    <!-- ==========================================================================
+         Site Header & Navigation
+         ========================================================================== -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#hero" class="brand-logo" aria-label="Ravi Kumar Portfolio Home">
+                <div class="logo-icon">RK</div>
+                <div class="brand-text">
+                    <span class="brand-name">Ravi Kumar</span>
+                    <span class="brand-badge">SEC://DEFENDER</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links" id="nav-links-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#terminal" class="nav-link">Terminal</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <a href="#contact" class="btn-header">
+                    <span>Get in Touch</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+            <!-- Left Column: Copy & Actions -->
+            <div class="hero-text-col reveal-left">
+                <div class="hero-badge">
+                    <span class="status-indicator"></span>
+                    <span>Ready for Cyber Security & Dev Roles</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Ravi Kumar</span>
+                </h1>
+
+                <div class="hero-typing-wrapper">
+                    <span>&gt;&nbsp;</span>
+                    <span class="hero-typing-text" id="typing-text"></span>
+                </div>
+
+                <p class="hero-description">
+                    B.Tech CSE student specializing in <strong>Cyber Security</strong>, with a strong background in low-level programming (C), scripting & automation (Python), relational databases (SQL), and modern web engineering (HTML, CSS, JavaScript). Passionate about dissecting vulnerabilities, competing in 24/36-hour hackathons, and developing secure, intuitive digital solutions.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#hackathons" class="btn btn-secondary">
+                        <span>Hackathon Track</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </a>
+                    <a href="#terminal" class="btn btn-cyber">
+                        <span>Launch CLI Terminal</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                    </a>
+                </div>
+
+                <!-- Stats Strip -->
+                <div class="hero-stats-strip">
+                    <div class="stat-item">
+                        <span class="stat-num">4<span class="plus">+</span></span>
+                        <span class="stat-label">Hackathons</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">6<span class="plus">+</span></span>
+                        <span class="stat-label">Core Languages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">12<span class="plus">+</span></span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">100<span class="plus">%</span></span>
+                        <span class="stat-label">Secure Mindset</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Cyber HUD Card -->
+            <div class="hero-visual reveal-right">
+                <div class="floating-cyber-badge badge-top-right">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <span>FIREWALL: ACTIVE</span>
+                </div>
+
+                <div class="cyber-card-hud">
+                    <div class="hud-header">
+                        <div class="hud-dots">
+                            <span class="hud-dot red"></span>
+                            <span class="hud-dot yellow"></span>
+                            <span class="hud-dot green"></span>
+                        </div>
+                        <span class="hud-title font-mono">NODE://RAVI_KUMAR.SYS</span>
+                        <span class="hud-status-chip font-mono">
+                            <span class="status-indicator"></span>
+                            ONLINE
+                        </span>
+                    </div>
+
+                    <div class="hud-body">
+                        <div class="cyber-avatar-box">
+                            <div class="avatar-hex">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="avatar-info">
+                                <h4>Ravi Kumar</h4>
+                                <div class="avatar-role">B.Tech CSE - Cyber Security</div>
+                                <div class="avatar-institute">Full Stack & Security Analyst</div>
+                            </div>
+                        </div>
+
+                        <!-- Live Security Metrics -->
+                        <div class="security-metrics">
+                            <div class="metric-bar-group">
+                                <div class="metric-label-row">
+                                    <span>Vulnerability Analysis & Pentest</span>
+                                    <span style="color: var(--neon-cyan);">82%</span>
+                                </div>
+                                <div class="metric-track">
+                                    <div class="metric-fill cyan" style="width: 82%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="metric-bar-group">
+                                <div class="metric-label-row">
+                                    <span>Full Stack Web Development</span>
+                                    <span style="color: var(--neon-green);">88%</span>
+                                </div>
+                                <div class="metric-track">
+                                    <div class="metric-fill green" style="width: 88%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="metric-bar-group">
+                                <div class="metric-label-row">
+                                    <span>Python & C Systems Programming</span>
+                                    <span style="color: var(--neon-purple);">85%</span>
+                                </div>
+                                <div class="metric-track">
+                                    <div class="metric-fill purple" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- System Specs -->
+                        <div class="hud-specs-grid">
+                            <div class="hud-spec-item">
+                                <span class="hud-spec-key">PRIMARY_LANG</span>
+                                <span class="hud-spec-val">Python / C / JS</span>
+                            </div>
+                            <div class="hud-spec-item">
+                                <span class="hud-spec-key">DATABASE</span>
+                                <span class="hud-spec-val">SQL (MySQL, SQLite)</span>
+                            </div>
+                            <div class="hud-spec-item">
+                                <span class="hud-spec-key">SECURITY_FOCUS</span>
+                                <span class="hud-spec-val">OWASP Top 10, Recon</span>
+                            </div>
+                            <div class="hud-spec-item">
+                                <span class="hud-spec-key">HACKATHONS</span>
+                                <span class="hud-spec-val active">Active Participant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-cyber-badge badge-bottom-left">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    <span>ZERO-TRUST ARCHITECTURE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Section
+         ========================================================================== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>System Dossier</span>
+                </div>
+                <h2 class="section-title">About <span class="gradient-text">Ravi Kumar</span></h2>
+                <p class="section-subtitle">
+                    A blend of software craftsmanship, analytical mindset, and defensive cyber security paradigms.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Bio & Pillars -->
+                <div class="about-text-col reveal-left">
+                    <p>
+                        I am currently pursuing my <strong>B.Tech in Computer Science and Engineering with a specialization in Cyber Security</strong>. My passion lies in understanding both sides of the coin: architecting modern, high-performance web applications and dissecting the security vectors that make or break digital systems.
+                    </p>
+                    <p>
+                        With foundational strength in <strong>C and Python</strong>, I grasp how memory allocation, pointers, and socket communication work at a low level. On the web side, I utilize <strong>HTML5, CSS3, and modern JavaScript</strong> to craft clean, responsive, and accessible user interfaces backed by structured <strong>SQL</strong> database designs.
+                    </p>
+                    <p>
+                        Beyond coursework, I actively participate in <strong>hackathons</strong> where rapid prototyping, cross-functional teamwork, and stress testing security models under pressure ignite my creativity and engineering speed.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-box">
+                            <div class="f-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h4>Secure By Design</h4>
+                            <p>Proactive defense against SQLi, XSS, and weak session configurations.</p>
+                        </div>
+                        <div class="feature-box">
+                            <div class="f-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            </div>
+                            <h4>Hackathon Sprinter</h4>
+                            <p>Turning problem statements into deployable minimum viable products rapidly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Info Summary Card -->
+                <div class="about-info-card glass-card reveal-right">
+                    <h3 class="info-card-title">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        <span>Profile Credentials</span>
+                    </h3>
+
+                    <div class="info-list">
+                        <div class="info-row">
+                            <span class="label">FULL NAME</span>
+                            <span class="val">Ravi Kumar</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">DEGREE</span>
+                            <span class="val">B.Tech - Computer Science & Engineering</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">SPECIALIZATION</span>
+                            <span class="val"><span class="badge-tag">Cyber Security</span></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">CORE LANGUAGES</span>
+                            <span class="val">C, Python, SQL, HTML, CSS, JS</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">SECURITY SKILLS</span>
+                            <span class="val">OWASP Top 10, Port Scan, Network Recon</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">HACKATHONS</span>
+                            <span class="val">Active Participant & Finalist</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">STATUS</span>
+                            <span class="val" style="color: var(--neon-green);">Available for Internships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills Section
+         ========================================================================== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Technical Arsenal</span>
+                </div>
+                <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+                <p class="section-subtitle">
+                    Comprehensive technical toolkit spanning programming languages, defensive cybersecurity concepts, web development, and database architectures.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="skills-filter-nav reveal">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="languages">Programming Languages</button>
+                <button class="filter-btn" data-filter="security">Cyber Security</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="databases">Databases & Tools</button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid">
+                <!-- 1. C Language -->
+                <div class="skill-card reveal" data-category="languages">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-4a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4h4"></path></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>C Programming</h4>
+                                <span>SYSTEMS & MEMORY</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Low-level pointer manipulation, dynamic memory allocation (malloc/free), algorithms, data structures, and buffer overflow vulnerability understanding.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Python -->
+                <div class="skill-card reveal" data-category="languages">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: #38bdf8;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3h10V7a5 5 0 0 0-5-5z"></path><path d="M12 22a5 5 0 0 0 5-5v-3H7v3a5 5 0 0 0 5 5z"></path><circle cx="9" cy="5" r="1"></circle><circle cx="15" cy="19" r="1"></circle></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>Python</h4>
+                                <span>AUTOMATION & SECURITY</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Socket programming, network packet inspection with Scapy, automated vulnerability recon scripts, API consumption, data manipulation, and security tools.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Cyber Security Basics -->
+                <div class="skill-card reveal" data-category="security">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: var(--neon-green);">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>Cyber Security Basics</h4>
+                                <span>DEFENSE & AUDITING</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            OWASP Top 10 awareness (SQL Injection, XSS, CSRF), port reconnaissance with Nmap, packet analysis via Wireshark, symmetric/asymmetric cryptography, and Linux CLI.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. HTML5 -->
+                <div class="skill-card reveal" data-category="web">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: #f97316;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>HTML5</h4>
+                                <span>SEMANTIC & ACCESSIBLE</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Clean document hierarchy, accessibility (ARIA), SEO best practices, forms with robust client-side validation, and HTML5 Web Storage / Canvas APIs.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. CSS3 -->
+                <div class="skill-card reveal" data-category="web">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: #38bdf8;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 2-2 14-6 2-6-2z"></path><path d="M8 8h8l-1 5H9l.5 3 2.5.8 2.5-.8.3-1.5"></path></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>CSS3 & Modern Styling</h4>
+                                <span>UI/UX & ANIMATIONS</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Flexbox, CSS Grid layouts, CSS Custom Properties (Variables), glassmorphism, keyframe animations, media queries for fluid responsive viewports, and dark mode themes.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. JavaScript -->
+                <div class="skill-card reveal" data-category="web languages">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: #facc15;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>JavaScript (ES6+)</h4>
+                                <span>CLIENT ARCHITECTURE</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            DOM manipulation, asynchronous JavaScript (Promises, async/await), Fetch API, event bubbling, security practices against DOM-based XSS, and interactive UI logic.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>86%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. SQL -->
+                <div class="skill-card reveal" data-category="databases">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: #a855f7;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>SQL (Relational Databases)</h4>
+                                <span>DATA & SECURE QUERIES</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Relational schema design, complex joins, indexing, normalization (3NF), parameterized prepared statements to eliminate SQL Injection, and transaction management.
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Developer Tools & Linux -->
+                <div class="skill-card reveal" data-category="databases security">
+                    <div>
+                        <div class="skill-card-top">
+                            <div class="skill-icon-wrap" style="color: var(--neon-cyan);">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <div class="skill-meta">
+                                <h4>Git & Linux CLI</h4>
+                                <span>ENVIRONMENT & VERSIONING</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Git branch management, GitHub collaboration, Bash scripting, Linux user permissions, firewall rules (UFW/iptables basics), and secure remote shell (SSH).
+                        </p>
+                    </div>
+                    <div class="skill-meter-wrap">
+                        <div class="meter-header">
+                            <span>Proficiency</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Experience Section
+         ========================================================================== -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Professional Trajectory</span>
+                </div>
+                <h2 class="section-title">Experience & <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">
+                    Hands-on engagements across software development, cybersecurity training, university tech leadership, and open-source contributions.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-period">2024 - Present</span>
+                            <h3 class="timeline-role">Cyber Security & Web Dev Trainee</h3>
+                            <div class="timeline-company">Virtual Cyber Labs & Tech Academy</div>
+                            <p class="timeline-desc">
+                                Executed practical vulnerability assessments on simulated target applications. Built secure web modules with role-based access control and implemented automated Python scripts to perform reconnaissance on port availability and HTTP headers.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag-pill">Python</span>
+                                <span class="tag-pill">OWASP Top 10</span>
+                                <span class="tag-pill">HTML/CSS</span>
+                                <span class="tag-pill">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-period">2023 - 2024</span>
+                            <h3 class="timeline-role">Technical Team Member & Hackathon Lead</h3>
+                            <div class="timeline-company">University Coding & Cyber Security Club</div>
+                            <p class="timeline-desc">
+                                Led student hackathon project squads, architecting user interfaces and verifying database security. Organized and facilitated beginner-friendly workshops on C programming fundamentals and Linux command-line mastery.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag-pill">C Programming</span>
+                                <span class="tag-pill">Hackathons</span>
+                                <span class="tag-pill">Linux</span>
+                                <span class="tag-pill">Team Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <span class="timeline-period">2022 - 2023</span>
+                            <h3 class="timeline-role">Independent Security Researcher & Student Developer</h3>
+                            <div class="timeline-company">Open Source & CTF Competitions</div>
+                            <p class="timeline-desc">
+                                Solved diverse Capture The Flag (CTF) challenges focusing on web security vulnerabilities, cryptography puzzles, and basic reverse engineering. Authored modular helper scripts in Python and C to parse logs and detect anomalous network traffic.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag-pill">Capture The Flag</span>
+                                <span class="tag-pill">Cryptography</span>
+                                <span class="tag-pill">Wireshark</span>
+                                <span class="tag-pill">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Hackathons Section (Featured Spotlight)
+         ========================================================================== -->
+    <section id="hackathons" class="hackathons-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Sprint & Competition Arena</span>
+                </div>
+                <h2 class="section-title">Hackathon <span class="gradient-text-alt">Showcase</span></h2>
+                <p class="section-subtitle">
+                    Transforming real-world problem statements into resilient, secure, production-ready software under strict 24-to-36 hour deadlines.
+                </p>
+            </div>
+
+            <div class="hackathons-grid">
+                <!-- Hackathon 1: Smart India Hackathon -->
+                <div class="hackathon-card reveal">
+                    <div>
+                        <div class="hackathon-top-bar">
+                            <span class="hack-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                                36-Hour National Sprint
+                            </span>
+                            <span class="hack-award">
+                                🏆 Top Finalist
+                            </span>
+                        </div>
+                        <h3 class="hackathon-title">Smart India Hackathon (SIH)</h3>
+                        <div class="hackathon-event-name">Project: SentinelShield Phishing & Threat Detector</div>
+                        <p class="hackathon-desc">
+                            Engineered a multi-layered defense application capable of analyzing suspicious URLs and phishing email payloads using heuristic pattern matching and automated header inspection.
+                        </p>
+                        <ul class="hack-feature-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Real-time URL domain age, DNS MX record, and SSL certificate verification.</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Built clean dashboard UI for cybersecurity analysts to review threat scores.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hack-footer">
+                        <div class="hack-tech-stack">
+                            <span class="tag-pill">Python</span>
+                            <span class="tag-pill">HTML/CSS</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Security APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathon 2: CyberStrike 36-Hr Hackathon -->
+                <div class="hackathon-card reveal">
+                    <div>
+                        <div class="hackathon-top-bar">
+                            <span class="hack-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                                24-Hour Cyber Hackathon
+                            </span>
+                            <span class="hack-award" style="color: var(--neon-cyan); border-color: rgba(0, 240, 255, 0.4); background: rgba(0, 240, 255, 0.1);">
+                                🥈 2nd Place / Cyber Award
+                            </span>
+                        </div>
+                        <h3 class="hackathon-title">CyberStrike Defense Hackathon</h3>
+                        <div class="hackathon-event-name">Project: PacketLens Intrusion Alert System</div>
+                        <p class="hackathon-desc">
+                            Constructed an automated packet dissection tool in Python that sniffs local network traffic and identifies brute-force SSH attacks and port sweep anomalies in near real-time.
+                        </p>
+                        <ul class="hack-feature-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Custom packet filtering algorithm recognizing SYN/FIN scan anomalies.</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Automated firewall IP blacklist recommendation log generator.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hack-footer">
+                        <div class="hack-tech-stack">
+                            <span class="tag-pill">Python Sockets</span>
+                            <span class="tag-pill">Scapy</span>
+                            <span class="tag-pill">Linux</span>
+                            <span class="tag-pill">Bash</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathon 3: HackCode Sprint -->
+                <div class="hackathon-card reveal">
+                    <div>
+                        <div class="hackathon-top-bar">
+                            <span class="hack-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                                30-Hour Full Stack Hack
+                            </span>
+                            <span class="hack-award" style="color: var(--neon-green); border-color: rgba(0, 255, 157, 0.4); background: rgba(0, 255, 157, 0.1);">
+                                ⚡ Best Architecture
+                            </span>
+                        </div>
+                        <h3 class="hackathon-title">HackCode National Sprint</h3>
+                        <div class="hackathon-event-name">Project: SecureAuth Role-Based Web Portal</div>
+                        <p class="hackathon-desc">
+                            Designed and coded a full-stack access management portal demonstrating comprehensive resistance against SQL Injection, credential stuffing, and session hijacking.
+                        </p>
+                        <ul class="hack-feature-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Strictly prepared SQL statements and contextual output sanitizers.</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Dark-themed futuristic dashboard with responsive interactive analytics.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hack-footer">
+                        <div class="hack-tech-stack">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">CSS3 Glassmorphism</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Projects Section
+         ========================================================================== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Engineering Showcase</span>
+                </div>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">
+                    A selection of security utilities, systems programs, and full-stack web applications created with defensive architectural standards.
+                </p>
+            </div>
+
+            <!-- Project Filter Navigation -->
+            <div class="skills-filter-nav projects-filter-nav reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="security">Cyber Security</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="tools">Systems & Python</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: SentinX -->
+                <div class="project-card reveal" data-category="security tools">
+                    <div class="project-header-banner">
+                        <div class="project-banner-decor"></div>
+                        <div class="project-icon-large">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <span class="project-badge-corner">CYBER TOOL</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h3 class="project-title">SentinX - Vulnerability Scanner</h3>
+                            <p class="project-summary">
+                                Multi-threaded network reconnaissance framework in Python. Scans open ports, identifies services, sniffs server banners, and flags misconfigurations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">Python</span>
+                                <span class="tag-pill">Sockets</span>
+                                <span class="tag-pill">Network Recon</span>
+                                <span class="tag-pill">JSON</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm open-project-modal" data-project="sentinx">
+                                <span>Inspect Details</span>
+                            </button>
+                            <a href="#terminal" class="btn-icon-link">
+                                <span>CLI Demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: SecureAuth -->
+                <div class="project-card reveal" data-category="security web">
+                    <div class="project-header-banner">
+                        <div class="project-banner-decor"></div>
+                        <div class="project-icon-large" style="color: var(--neon-green); border-color: var(--neon-green);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <span class="project-badge-corner" style="color: var(--neon-cyan);">WEB SECURITY</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h3 class="project-title">SecureAuth Role-Based Portal</h3>
+                            <p class="project-summary">
+                                Hardened full-stack application featuring role-based authorization, prepared SQL statements against SQLi, XSS sanitization, and session monitoring.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">HTML5</span>
+                                <span class="tag-pill">CSS3</span>
+                                <span class="tag-pill">JavaScript</span>
+                                <span class="tag-pill">SQL</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm open-project-modal" data-project="secureauth">
+                                <span>Inspect Details</span>
+                            </button>
+                            <a href="#contact" class="btn-icon-link">
+                                <span>Source Code</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: CryptoKey -->
+                <div class="project-card reveal" data-category="security tools">
+                    <div class="project-header-banner">
+                        <div class="project-banner-decor"></div>
+                        <div class="project-icon-large" style="color: var(--neon-purple); border-color: var(--neon-purple);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                        </div>
+                        <span class="project-badge-corner">C & CRYPTO</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h3 class="project-title">CryptoKey - File Encryptor</h3>
+                            <p class="project-summary">
+                                Lightweight cryptographic encryption utility in C and Python. Employs AES-256 symmetric cipher with SHA-256 checksums to verify tamper-proof integrity.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">C Language</span>
+                                <span class="tag-pill">Python</span>
+                                <span class="tag-pill">AES-256</span>
+                                <span class="tag-pill">SHA-256</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm open-project-modal" data-project="cryptokey">
+                                <span>Inspect Details</span>
+                            </button>
+                            <a href="#terminal" class="btn-icon-link">
+                                <span>Test in CLI</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: PacketLens -->
+                <div class="project-card reveal" data-category="security tools">
+                    <div class="project-header-banner">
+                        <div class="project-banner-decor"></div>
+                        <div class="project-icon-large" style="color: #38bdf8; border-color: #38bdf8;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <span class="project-badge-corner">NETWORKING</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h3 class="project-title">PacketLens - Network Traffic Sniffer</h3>
+                            <p class="project-summary">
+                                Python real-time packet analyzer that captures live network frames, inspects protocol headers (IP, TCP, UDP, DNS), and flags anomalous flood patterns.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">Python</span>
+                                <span class="tag-pill">Scapy</span>
+                                <span class="tag-pill">TCP/IP</span>
+                                <span class="tag-pill">Wireshark PCAP</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm open-project-modal" data-project="packetlens">
+                                <span>Inspect Details</span>
+                            </button>
+                            <a href="#hackathons" class="btn-icon-link">
+                                <span>Hackathon Origin</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: SQLi Defense Lab -->
+                <div class="project-card reveal" data-category="security web">
+                    <div class="project-header-banner">
+                        <div class="project-banner-decor"></div>
+                        <div class="project-icon-large" style="color: #facc15; border-color: #facc15;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <span class="project-badge-corner">EDUCATIONAL LAB</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h3 class="project-title">SQLi Defense Lab & Sandbox</h3>
+                            <p class="project-summary">
+                                Educational web interface comparing vulnerable inline SQL queries against secure parameterized statements with real-time visual output and explanation.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">SQL</span>
+                                <span class="tag-pill">HTML5</span>
+                                <span class="tag-pill">JavaScript</span>
+                                <span class="tag-pill">OWASP</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm open-project-modal" data-project="sqliplayground">
+                                <span>Inspect Details</span>
+                            </button>
+                            <a href="#contact" class="btn-icon-link">
+                                <span>Learn More</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: DevFolio Pro -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-header-banner">
+                        <div class="project-banner-decor"></div>
+                        <div class="project-icon-large" style="color: #00f0ff; border-color: #00f0ff;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <span class="project-badge-corner">PORTFOLIO</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h3 class="project-title">DevFolio Pro - Cyber Portfolio</h3>
+                            <p class="project-summary">
+                                Ultra-fast modern portfolio engineered purely in vanilla HTML, CSS, and JavaScript. Zero external frameworks, interactive terminal CLI, and particle physics.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">HTML5</span>
+                                <span class="tag-pill">CSS3</span>
+                                <span class="tag-pill">Vanilla JS</span>
+                                <span class="tag-pill">Canvas API</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm open-project-modal" data-project="devfoliopro">
+                                <span>Inspect Details</span>
+                            </button>
+                            <a href="#hero" class="btn-icon-link">
+                                <span>Live Demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Achievements & Certifications Section
+         ========================================================================== -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Milestones & Recognitions</span>
+                </div>
+                <h2 class="section-title">Honors & <span class="gradient-text">Achievements</span></h2>
+                <p class="section-subtitle">
+                    Demonstrated milestones across competitive hackathons, CTF challenges, academic merits, and technical certifications.
+                </p>
+            </div>
+
+            <div class="achievements-grid">
+                <!-- Achievement 1 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🏆</div>
+                    <h3 class="achievement-title">SIH Hackathon Finalist</h3>
+                    <div class="achievement-org">SMART INDIA HACKATHON</div>
+                    <p class="achievement-desc">
+                        Recognized among the top student engineering teams nationwide for developing an automated phishing detection tool under intense competition conditions.
+                    </p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🥈</div>
+                    <h3 class="achievement-title">2nd Place - Cyber Defense Hack</h3>
+                    <div class="achievement-org">CYBERSTRIKE NATIONAL COMPETE</div>
+                    <p class="achievement-desc">
+                        Awarded 2nd Prize for creating "PacketLens", an automated real-time network sniffer and anomaly detector with responsive incident logs.
+                    </p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🛡️</div>
+                    <h3 class="achievement-title">CTF Competitor & Top Percentile</h3>
+                    <div class="achievement-org">TRYHACKME / CTF PLATFORMS</div>
+                    <p class="achievement-desc">
+                        Successfully solved 40+ rooms covering Linux privilege escalation, network scanning, OWASP web vulnerabilities, and password cracking.
+                    </p>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">📜</div>
+                    <h3 class="achievement-title">Networking & Cybersecurity Certs</h3>
+                    <div class="achievement-org">CISCO / ONLINE CREDENTIALS</div>
+                    <p class="achievement-desc">
+                        Completed structured certifications in Computer Networking Fundamentals (TCP/IP, subnetting) and Cyber Security Essentials.
+                    </p>
+                </div>
+
+                <!-- Achievement 5 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">💻</div>
+                    <h3 class="achievement-title">Python for Security Specialist</h3>
+                    <div class="achievement-org">ACADEMIC & PEER TRAINING</div>
+                    <p class="achievement-desc">
+                        Mastered socket programming, automation scripts, and HTTP client interactions for cybersecurity research and tooling.
+                    </p>
+                </div>
+
+                <!-- Achievement 6 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🎓</div>
+                    <h3 class="achievement-title">Academic Distinction in CSE</h3>
+                    <div class="achievement-org">B.TECH CYBER SECURITY PROGRAM</div>
+                    <p class="achievement-desc">
+                        Consistent high academic standing in core subjects: Computer Networks, Database Management Systems (SQL), Operating Systems, and C.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Cyber Security Terminal Section
+         ========================================================================== -->
+    <section id="terminal" class="terminal-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Interactive Console</span>
+                </div>
+                <h2 class="section-title">CyberSec <span class="gradient-text">CLI Console</span></h2>
+                <p class="section-subtitle">
+                    Direct access to my developer terminal. Click the quick command chips or type commands in the prompt below.
+                </p>
+            </div>
+
+            <div class="terminal-wrapper reveal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="hud-dot red"></span>
+                        <span class="hud-dot yellow"></span>
+                        <span class="hud-dot green"></span>
+                    </div>
+                    <span class="terminal-title">bash — ravi@cybersec:~ (v2.4.0-release)</span>
+                    <span style="color: var(--neon-cyan); font-size: 0.75rem;">TLS 1.3 SECURE</span>
+                </div>
+
+                <!-- Quick Action Chips -->
+                <div class="terminal-chips">
+                    <span class="cmd-chip" data-cmd="help">help</span>
+                    <span class="cmd-chip" data-cmd="whoami">whoami</span>
+                    <span class="cmd-chip" data-cmd="skills">skills</span>
+                    <span class="cmd-chip" data-cmd="projects">projects</span>
+                    <span class="cmd-chip" data-cmd="hackathons">hackathons</span>
+                    <span class="cmd-chip" data-cmd="scan">scan</span>
+                    <span class="cmd-chip" data-cmd="audit">audit</span>
+                    <span class="cmd-chip" data-cmd="matrix">matrix</span>
+                    <span class="cmd-chip" data-cmd="contact">contact</span>
+                    <span class="cmd-chip" data-cmd="clear">clear</span>
+                </div>
+
+                <!-- Terminal Output Buffer -->
+                <div class="terminal-window" id="terminal-window">
+                    <div id="terminal-output" class="terminal-output">
+                        <div class="terminal-line highlight">
+                            ================================================================================
+                        </div>
+                        <div class="terminal-line success">
+                            [CONNECTED] Welcome to Ravi Kumar's Interactive Cyber Terminal.
+                        </div>
+                        <div class="terminal-line info">
+                            System initialized. Type <span class="highlight">help</span> to view all commands or click the chips above.
+                        </div>
+                        <div class="terminal-line highlight">
+                            ================================================================================
+                        </div>
+                    </div>
+
+                    <!-- Input Line -->
+                    <div class="terminal-input-row">
+                        <span class="terminal-prompt">ravi@cybersec:~$</span>
+                        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="type 'help' and hit Enter..." autofocus>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Details Section
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Secure Transmission</span>
+                </div>
+                <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">
+                    Have an internship opportunity, hackathon collaboration, or project inquiry? Send an encrypted transmission or reach out directly.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Details & Social Channels -->
+                <div class="contact-info-panel reveal-left">
+                    <div class="contact-card-box">
+                        <div class="contact-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-details-text">
+                            <h4>DIRECT EMAIL</h4>
+                            <p>ravikumar.cybersec@gmail.com</p>
+                        </div>
+                        <button class="copy-btn" id="copy-email-btn" title="Copy to clipboard">Copy</button>
+                    </div>
+
+                    <div class="contact-card-box">
+                        <div class="contact-icon-box" style="color: var(--neon-green);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="contact-details-text">
+                            <h4>LOCATION & CITIZENSHIP</h4>
+                            <p>India (Open to Remote & On-site)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-box">
+                        <div class="contact-icon-box" style="color: var(--neon-purple);">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <div class="contact-details-text">
+                            <h4>STATUS & ROLE</h4>
+                            <p>Full Stack & Cyber Security Internships</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Handles -->
+                    <div>
+                        <h4 style="font-size: 0.95rem; margin-bottom: 14px; color: var(--text-secondary);">PROFESSIONAL CHANNELS</h4>
+                        <div class="social-links-bar">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="mailto:ravikumar.cybersec@gmail.com" class="social-btn" title="Direct Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </a>
+                            <a href="#terminal" class="social-btn" title="Open Interactive CLI">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Contact Form -->
+                <div class="contact-form-panel reveal-right">
+                    <form id="contact-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="contact-name">Your Full Name *</label>
+                                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Johnson" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" class="form-control" placeholder="alex@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Transmission Subject</label>
+                            <input type="text" id="contact-subject" class="form-control" placeholder="Internship Opportunity / Project Collaboration">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message Payload *</label>
+                            <textarea id="contact-message" class="form-control" placeholder="Hello Ravi, I reviewed your portfolio and would like to discuss..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                            <span>Transmit Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Project Details Modal
+         ========================================================================== -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+            <div id="modal-dynamic-content">
+                <!-- Content injected dynamically via main.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Component -->
+    <div class="toast-notice" id="toast-notice" role="alert">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-green);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <span id="toast-message">Transmission received!</span>
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- ==========================================================================
+         Site Footer
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="brand-logo">
+                    <div class="logo-icon">RK</div>
+                    <div class="brand-text">
+                        <span class="brand-name">Ravi Kumar</span>
+                        <span class="brand-badge">B.TECH CSE (CYBER SECURITY)</span>
+                    </div>
+                </div>
+
+                <div class="footer-status">
+                    <span class="status-indicator"></span>
+                    <span>ALL SYSTEMS OPERATIONAL // ZERO VULNERABILITIES</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Ravi Kumar. Crafted with pure HTML5, CSS3 & JavaScript.</p>
+                <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--neon-cyan);">
+                    "Security is not a product, but a continuous process."
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Pure Vanilla JS, Zero External Libraries) -->
+    <script src="js/particles.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
